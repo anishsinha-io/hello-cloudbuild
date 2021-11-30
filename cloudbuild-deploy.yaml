@@ -22,7 +22,7 @@ steps:
       - gcr.io/${PROJECT_ID}/demo:${TAG_NAME}
 
   - id: deploy
-    dir: .
+    dir: hello-cloudbuild
     name: cloudnatived/helm-cloudbuilder
     env:
       - KUBECONFIG=/workspace/.kube/config
